@@ -9,6 +9,7 @@ import (
 )
 
 func setupRoutes(app *fiber.App) {
+	app.Get("/api/leads", lead.GetLeads)
 }
 
 func initDatabase() {
