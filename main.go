@@ -10,6 +10,7 @@ import (
 
 func setupRoutes(app *fiber.App) {
 	app.Get("/api/leads", lead.GetLeads)
+	app.Post("/api/leads", lead.CreateLead)
 }
 
 func initDatabase() {

@@ -1,3 +1,14 @@
-
+### Get All Leads
 GET http://localhost:8000/api/leads
 
+
+
+### Create A Lead
+POST http://localhost:8000/api/leads
+Content-Type: application/json
+
+{
+  "Name": "Radha",
+  "Company": "Vidheya",
+  "Email": "radha@gmail.com"
+}
