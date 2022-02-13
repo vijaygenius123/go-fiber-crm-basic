@@ -2,6 +2,8 @@
 GET http://localhost:8000/api/leads
 
 
+### Get Lead By ID
+GET http://localhost:8000/api/leads/4
 
 ### Create A Lead
 POST http://localhost:8000/api/leads

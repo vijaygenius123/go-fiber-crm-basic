@@ -19,7 +19,10 @@ func GetLeads(c *fiber.Ctx) {
 	db := database.DBConn
 	var leads []Lead
 	db.Find(&leads)
-	c.JSON(leads)
+	err := c.JSON(leads)
+	if err != nil {
+		return
+	}
 }
 
 func CreateLead(c *fiber.Ctx) {
@@ -29,5 +32,19 @@ func CreateLead(c *fiber.Ctx) {
 		c.Status(http.StatusBadRequest).Send(err)
 	}
 	db.Create(&lead)
-	c.JSON(lead)
+	err := c.JSON(lead)
+	if err != nil {
+		return
+	}
+}
+
+func GetLead(c *fiber.Ctx) {
+	id := c.Params("id")
+	db := database.DBConn
+	var lead Lead
+	db.Find(&lead, id)
+	err := c.JSON(lead)
+	if err != nil {
+		return
+	}
 }
