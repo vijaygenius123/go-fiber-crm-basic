@@ -12,6 +12,7 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/api/leads", lead.GetLeads)
 	app.Get("/api/leads/:id", lead.GetLead)
 	app.Post("/api/leads", lead.CreateLead)
+	app.Delete("/api/leads/:id", lead.DeleteLead)
 }
 
 func initDatabase() {

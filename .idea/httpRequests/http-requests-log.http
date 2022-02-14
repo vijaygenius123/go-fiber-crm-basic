@@ -1,0 +1,126 @@
+GET http://localhost:8000/api/leads
+
+<> 2022-02-14T075450.200.json
+
+###
+
+DELETE http://localhost:8000/api/leads/3
+
+<> 2022-02-14T075447.200.txt
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-14T075433.200.json
+
+###
+
+POST http://localhost:8000/api/leads
+Content-Type: application/json
+
+{
+  "Name": "Test",
+  "Company": "Vidheya",
+  "Email": "test@gmail.com"
+}
+
+<> 2022-02-14T075431.200.json
+
+###
+
+GET http://localhost:8000/api/leads/4
+
+<> 2022-02-13T131606.200.json
+
+###
+
+GET http://localhost:8000/api/leads/2
+
+<> 2022-02-13T131559.200.json
+
+###
+
+GET http://localhost:8000/api/leads/2
+
+<> 2022-02-13T131512.200.json
+
+###
+
+GET http://localhost:8000/api/leads/4
+
+<> 2022-02-13T131507.200.json
+
+###
+
+GET http://localhost:8000/api/leads/4
+
+<> 2022-02-13T131506.200.json
+
+###
+
+GET http://localhost:8000/api/leads/3
+
+<> 2022-02-13T131500.200.json
+
+###
+
+GET http://localhost:8000/api/leads/1
+
+<> 2022-02-13T131456.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-13T131414.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-12T162554.200.json
+
+###
+
+POST http://localhost:8000/api/leads
+Content-Type: application/json
+
+{
+  "Name": "Radha",
+  "Company": "Vidheya",
+  "Email": "radha@gmail.com"
+}
+
+<> 2022-02-12T162551.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-12T162519.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-11T184230.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-11T184008.200.json
+
+###
+
+GET http://localhost:8000/api/leads
+
+<> 2022-02-11T183942.200.json
+
+###
+

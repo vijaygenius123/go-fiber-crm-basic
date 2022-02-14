@@ -48,3 +48,18 @@ func GetLead(c *fiber.Ctx) {
 		return
 	}
 }
+
+func DeleteLead(c *fiber.Ctx) {
+	id := c.Params("id")
+	db := database.DBConn
+	var lead Lead
+	db.Find(&lead, id)
+
+	if lead.Name == "" {
+		c.Status(http.StatusNotFound).Send("No Lead Found")
+	}
+
+	db.Delete(&lead)
+
+	c.Status(http.StatusOK).Send("Lead Deleted")
+}

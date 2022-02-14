@@ -10,7 +10,10 @@ POST http://localhost:8000/api/leads
 Content-Type: application/json
 
 {
-  "Name": "Radha",
+  "Name": "Test",
   "Company": "Vidheya",
-  "Email": "radha@gmail.com"
+  "Email": "test@gmail.com"
 }
+
+### Delete Lead By ID
+DELETE http://localhost:8000/api/leads/3
